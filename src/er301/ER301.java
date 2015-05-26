@@ -1,3 +1,7 @@
+//Aquí van los comentarios
+
+//Antony García González
+
 package er301;
 
 import gnu.io.SerialPortEvent;
@@ -14,7 +18,7 @@ public class ER301 implements Runnable {
     PanamaHitek_Arduino serial = new PanamaHitek_Arduino();
     Thread detectingSequence;
     private volatile boolean running = false;
-
+//yo soy 
     private int index = 0;
     private String inputData = "";
     private String code = "";
@@ -361,19 +365,19 @@ public class ER301 implements Runnable {
                     case 7:
                         if (getInputData().length() > 10) {
                             setCode(getInputData().replace(" ", ""));
-                            System.out.println(getCode());
+                        
                             index = 8;
 
                         }
                         break;
                     case 8:
-                        System.out.println("esta en 8");
+                      
                         afterCode1();
                         clearInputData();
                         index = 9;
                         break;
                     case 9:
-                        System.out.println(getInputData());
+                      
                         if (getInputData().contains(afterCodeAnswer1)) {
                             index = 10;
                         }
