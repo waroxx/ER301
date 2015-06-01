@@ -13,12 +13,13 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import panamahitek.PanamaHitek_Arduino;
 
+//yo soy Monica De Puy
 public class ER301 implements Runnable {
 
     PanamaHitek_Arduino serial = new PanamaHitek_Arduino();
     Thread detectingSequence;
     private volatile boolean running = false;
-//yo soy 
+
     private int index = 0;
     private String inputData = "";
     private String code = "";
