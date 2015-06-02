@@ -1,7 +1,7 @@
 //Aquí van los comentarios
 //Marcel Palacios
 //Antony García González
-
+//Eduardo Beckford
 package er301;
 
 import gnu.io.SerialPortEvent;
